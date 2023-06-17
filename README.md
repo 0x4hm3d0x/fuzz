@@ -31,11 +31,11 @@ python3 fuzz.py -u <url> -pd "<post_data>" -w <wordlist> [-s <selected_status_co
 
 Fuzz the login endpoint with a wordlist and select URLs with a status code of 200:
 
-python3 fuzz.py -u https://example.com/login -w wordlist.txt -s 200
+python3 fuzz.py -u https://example.com/FUZZ -w wordlist.txt -s 200
 
 Fuzz the login endpoint with a wordlist and filter URLs that contain the word "error":
 
-python3 fuzz.py -u https://example.com/login -w wordlist.txt -ic error
+python3 fuzz.py -u https://example.com/FUZZ -w wordlist.txt -ic error
 
 ## Contributing
 
